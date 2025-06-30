@@ -38,7 +38,7 @@ def read_matrix(xlsx_path: Path) -> torch.Tensor:
         df = df.iloc[1:, 1:]  # drop top-left labels
     # final sanity check
     if df.shape[0] != df.shape[1]:
-        raise ValueError(f"Need a 60×60 numeric block, got {df.shape}")
+        raise ValueError(f"Need a square numeric block, got {df.shape}")
     df = df.apply(pd.to_numeric, errors="raise")  # abort on non-numbers
     return torch.tensor(df.values, dtype=torch.float32)
 
