@@ -39,6 +39,7 @@ This will:
 ### 4. Estimate Link Probability
 
 To estimate the link probability between any two nodes after training:
+Write in you terminal:
 ```bash
 python
 ```
@@ -56,3 +57,4 @@ print(link_prob(3, 17))  # change 3 and 17 to the 2 nodes you want
  You now have a working VGAE pipeline for link prediction on your data.
 
  9te3
+``
