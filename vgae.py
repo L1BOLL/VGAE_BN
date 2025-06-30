@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-"""
-End-to-end VGAE for interaction matrix
-"""
-
 # imports
 import sys, warnings
 from pathlib import Path
